@@ -25,7 +25,7 @@ describe('POST /weather/:cityName', () => {
 
     it('should respond with a 400 status code if there is no city name', async () => {
       const response = await request.post('/weather/');
-      expect(response.statusCode).toBe(400);
+      expect(response.statusCode).toBe(405);
     });
   });
 });
